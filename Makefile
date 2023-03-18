@@ -6,7 +6,7 @@
 #    By: zweng <zweng@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/19 12:41:50 by zweng             #+#    #+#              #
-#    Updated: 2023/03/04 13:06:45 by zweng            ###   ########.fr        #
+#    Updated: 2023/03/18 11:01:30 by zweng            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,8 @@ NAME 		= avaj-launcher
 MAINC		= Main
 J_PATH 		= srcs
 JC_PATH		= classes
+SRS			= sources.txt
+MAIN		= srcs.simulator.Simulator
 
 # ---------------- transformation ------------------ #
 
@@ -39,7 +41,14 @@ EOC			:="\033[0;0m"
 #  # ==================
 
 # ----- part rules -----
-all: $(JCS)
+all: go
+
+go:
+	@find * -name "*.java" > $(SRS)
+	@$(JC) @$(SRS)
+	@$(JRE) $(MAIN) scenario.txt
+
+build: $(JCS)
 
 run:
 	@$(JRE) --class-path $(JC_PATH) $(MAINC)
@@ -52,7 +61,8 @@ $(JC_PATH):
 	@mkdir $(JC_PATH) 2> /dev/null
 
 clean: 
-	@rm -f $(JCS) 
+	@rm -f $(JCS) $(SRS) simulation.txt
+	@find * -name "*.class" -exec rm {} \;
 	@rm -rf $(JC_PATH) 2> /dev/null
 	@printf $(GREEN)"$(NAME) clean\n"$(EOC)
 
