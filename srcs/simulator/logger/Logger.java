@@ -22,24 +22,27 @@ public class Logger
         }
     }
 
-    public void logLine(String msg)
+    public static void logLine(String msg)
     {
-       try
-       {
-           this.writer.write(msg);
-           this.writer.newLine();
-       } 
-       catch (IOException e)
-       {
-          System.out.println("Error: Could not write to file");
-       }
+		Logger logger = Logger.getInstance();
+		try
+		{
+			System.out.println(msg);
+			logger.writer.write(msg);
+			logger.writer.newLine();
+		}
+		catch (IOException e)
+		{
+			System.out.println("Error: Could not write to file");
+		}
     }
 
-    public void closeFile()
+    public static void closeFile()
     {
+		Logger logger = Logger.getInstance();
         try
         {
-            this.writer.close();
+            logger.writer.close();
         }
         catch (IOException e)
         {

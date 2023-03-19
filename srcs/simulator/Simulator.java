@@ -42,7 +42,6 @@ public class Simulator
                     flyables.add(flyable);
                 }
 
-                System.out.println(flyables);
                 for (Flyable flyable: flyables)
                 {
                    flyable.registerTower(weatherTower);
@@ -71,8 +70,7 @@ public class Simulator
         }
         finally
         {
-            Logger logger = Logger.getInstance();
-            logger.closeFile();
+            Logger.closeFile();
         }
     }
 }
