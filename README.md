@@ -10,7 +10,7 @@ This is the first Java project in the cursus of school 42. Here is my understand
 
 ---
 
-[Documentation]([https://docs.oracle.com/javase/tutorial/java/](https://docs.oracle.com/javase/tutorial/java/))
+[Documentation](https://docs.oracle.com/javase/tutorial/java/](https://docs.oracle.com/javase/tutorial/java/)
 
 ## javac
 
@@ -56,9 +56,9 @@ whenever java encounters `import abc.xyz.ClassName;` it tries to resolve `abc
 
 # UML (Unified Modelling language)
 
-(UML Tutorial)[[https://www.javatpoint.com/uml](https://www.javatpoint.com/uml-building-blocks)]
+[UML Tutorial](https://www.javatpoint.com/uml-building-blocks)
 
-(chart )[[https://www.lucidchart.com/pages/uml-class-diagram](https://www.lucidchart.com/pages/uml-class-diagram)]
+[chart ](https://www.lucidchart.com/pages/uml-class-diagram)
 
 UML is composed of three main building blocks. Things, relationships, and diagrams. Building blocks generate one complete UML model diagram by rotation around several different blocks. It plays an essential role in developing UML diagrams.
 
@@ -98,41 +98,23 @@ Diagrams are graphical implementation of the models that incorporate symbols and
 - Middle Section: Attributes of the class. public (+), private(-), protected(#), package(~).
 - Lower Section: contain methods of the class.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b9a9514-b65d-47da-8295-3646572b069f/Untitled.png)
-
 ### Relationships:
 
 - Dependency:  Between two or more classes where a change in one class cause changes in another class. For example: Student_Name is dependent on the Student_Id
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ad4a6475-cb05-4f2f-b82c-27f1efadcbf8/Untitled.png)
-
 - Generalisation: A relationship between a parent class and a child class. For example, the Current Account, Saving Account, and Credit Account are the generalised from Bank Account
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc0268f7-2cee-48ea-aff0-24022b04833d/Untitled.png)
 
 - Association: Describes a static or physical connection between two or more objects. It depicts how many objects are there in the relationship. For example, a department is associated with the college.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fec47b40-2dbb-4935-b4f0-4f7b4961bba5/Untitled.png)
-
 - Multiplicity: Defines a specific range of allowable instances of attributes. In case if a range is not specified, one is considered as a default multiplicity. For example, multiple patients are admitted to one hospital.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aea4d877-a05b-45d9-8ca2-0bb35d43ffcc/Untitled.png)
 
 - Aggregation: An aggregation is a subset of association, which represents has a relationship. It is more specific than association. It defines a part-whole or part-of relationship. For example, the company encompasses a number of employees and even if one employee resigns, the company still exists.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72f2f8c2-2c6b-4e18-96c7-20c4ac4f818b/Untitled.png)
-
 - Composition: Composition is a subset of aggregation. IT portrays the dependency between the parent and its child, means if one part is deleted, the other part also gets discarded. it represents a whole-part relationship. A contact book consists of multiple contacts, and if you delete the contact book, all the contacts will be lost.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a51ea6dd-3222-4124-a1f7-f38aaf1657fd/Untitled.png)
 
 - Generalisation: For Inheritance
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e9b44f1a-1729-48ad-9904-fab93052de50/Untitled.png)
-
 - Realisation: for interface realisation
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04f2b357-1fad-417e-894a-c7b4293fc187/Untitled.png)
 
 ### Abstract Classes
 
@@ -142,9 +124,9 @@ The notation of the abstract class is similar to the of class; the only differen
 
 # Design Pattern
 
-(Book to read by GOF)[[https://en.wikipedia.org/wiki/Design_Patterns](https://en.wikipedia.org/wiki/Design_Patterns)]
+[Book to read by GOF](https://en.wikipedia.org/wiki/Design_Patterns)
 
-(Tutorial)[[https://www.javatpoint.com/design-patterns-in-java](https://www.javatpoint.com/design-patterns-in-java)]
+[Tutorial](https://www.javatpoint.com/design-patterns-in-java)
 
 Design pattern are well-proved solution for solving the specific problem. (good code writing method)
 
@@ -193,8 +175,6 @@ public final class Singleton {
 ### Factory pattern
 
 A factory pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Subclasses are responsible to create the instance of the class. In short, a class is used to create other class instances.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1be5199e-c00b-4973-89c8-e09ee76e2cdb/Untitled.png)
 
 ### Observer Pattern
 
