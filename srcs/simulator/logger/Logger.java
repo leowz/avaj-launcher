@@ -27,7 +27,6 @@ public class Logger
 		Logger logger = Logger.getInstance();
 		try
 		{
-			System.out.println(msg);
 			logger.writer.write(msg);
 			logger.writer.newLine();
 		}

@@ -6,7 +6,7 @@
 #    By: zweng <zweng@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/19 12:41:50 by zweng             #+#    #+#              #
-#    Updated: 2023/03/18 11:01:30 by zweng            ###   ########.fr        #
+#    Updated: 2023/03/20 15:38:41 by zweng            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,12 +41,11 @@ EOC			:="\033[0;0m"
 #  # ==================
 
 # ----- part rules -----
-all: go
-
-go:
+all:
 	@find * -name "*.java" > $(SRS)
 	@$(JC) @$(SRS)
 	@$(JRE) $(MAIN) scenario.txt
+	@cat simulation.txt
 
 build: $(JCS)
 
