@@ -7,9 +7,11 @@ public class WeatherProvider
 {
     private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
     private static WeatherProvider instance;
+    private Random rand;
 
     private WeatherProvider()
     {
+        this.rand = new Random(System.currentTimeMillis());
     }
 
     public static WeatherProvider getInstance()
@@ -26,8 +28,7 @@ public class WeatherProvider
         int     index;
 
         seed = p_coord.seedFromCoord();
-        rand = new Random(seed);
-        index = rand.nextInt(4);
+        index = (int)((this.rand.nextInt(4) + seed) % 4);
         return this.weather[index];
     }
 

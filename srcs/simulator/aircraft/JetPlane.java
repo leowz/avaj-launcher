@@ -53,7 +53,7 @@ public class JetPlane extends Aircraft implements Flyable
 		{
 			Coordinates old_coord = this.coordinates;
 			Coordinates new_coord =
-				Coordinates.coordFactory(oldLa, oldLo, oldH - 7);
+				Coordinates.coordFactory(oldLo, oldLa, oldH - 7);
 			this.speak(old_coord, new_coord, weather,
 					" OMG! Winter is coming!");
 			this.changeCoordinates(new_coord);

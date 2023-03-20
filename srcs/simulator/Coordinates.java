@@ -37,7 +37,7 @@ public class Coordinates
     }
 
     public long seedFromCoord() {
-       return 100 * this.longitude + 10 * this.latitude + height; 
+       return this.longitude + this.latitude + this.height; 
     }
 
 	public static Coordinates coordFactory(int longi, int lati, int height)
