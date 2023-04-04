@@ -2,6 +2,8 @@
 
 This is the first Java project in the cursus of school 42. Here is my understand and what I have learned in the process of doing this project.
 
+Avaj-launcher is a very simple exercise using Java. The principle idea is to implement a series of class structure and different design patterns indicated by UML graph provided by 42. The finished java program should be able to read from a file, do rounds of simulation and log results in a output file.
+
 ### Tasks to do:
 
 1. Implement classes and architecture from the UML class diagram provided.
@@ -10,7 +12,7 @@ This is the first Java project in the cursus of school 42. Here is my understand
 
 ---
 
-[Documentation](https://docs.oracle.com/javase/tutorial/java/](https://docs.oracle.com/javase/tutorial/java/)
+[Documentation](https://docs.oracle.com/javase/tutorial/java/)
 
 ## javac
 
